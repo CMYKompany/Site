@@ -5,13 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chris Yates — AI Experience &amp; Design Leadership</title>
   <meta name="description" content="Christopher Yates is a Washington, DC design leader working at the front edge of AI experience design — lead designer on LEDGER, an AI policy assistant used by 250,000 people. Enterprise-scale, human-centered design leadership." />
-
-  <!-- Production webfonts (GitHub Pages has no CSP). Robust fallbacks below cover
-       any environment that can't load them, so type never renders "wrong." -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
@@ -19,9 +15,7 @@
 
   <header class="site-header">
     <a class="wordmark" href="/" aria-label="C. M. Yates & Kompany — home">
-      <span class="wordmark__cmyk" aria-hidden="true">
-        <i class="c"></i><i class="m"></i><i class="y"></i><i class="k"></i>
-      </span>
+      <span class="wordmark__cmyk" aria-hidden="true"><i class="c"></i><i class="m"></i><i class="y"></i><i class="k"></i></span>
       <span class="wordmark__text">C.&#8202;M.&#8202;Yates&#8202;&amp;&#8202;Kompany</span>
     </a>
     <nav class="site-nav" aria-label="Primary">
@@ -37,7 +31,7 @@
     <!-- HERO ------------------------------------------------------------ -->
     <section class="hero" aria-labelledby="hero-h">
       <div class="hero__inner">
-        <p class="eyebrow eyebrow--onblue">Christopher Yates &middot; Design leadership &middot; Washington, DC</p>
+        <p class="prod-mark prod-mark--onblue">Christopher Yates &middot; Design leadership &middot; Washington DC</p>
         <h1 id="hero-h" class="hero__headline">Everything is a<br />design problem.</h1>
         <p class="hero__aside">(So you came to the right place.)</p>
         <p class="hero__lede">
@@ -49,29 +43,29 @@
         </p>
         <div class="hero__actions">
           <a class="btn btn--solid" href="#work">See the work</a>
-          <a class="btn btn--ghost" href="mailto:Chris@CMYKompany.com">Start a conversation</a>
+          <a class="link-rule" href="mailto:Chris@CMYKompany.com">Start a conversation</a>
         </div>
       </div>
+      <div class="hero__reg" aria-hidden="true"><span class="regbar"><i class="c"></i><i class="m"></i><i class="y"></i><i class="k"></i></span></div>
     </section>
 
     <!-- FEATURED WORK --------------------------------------------------- -->
-    <section class="work" id="work" aria-labelledby="work-h">
+    <section class="section" id="work" aria-labelledby="work-h">
       <div class="section-head">
+        <p class="prod-mark">Selected work</p>
         <h2 id="work-h" class="section-title">Good design tells a story.<br />Here are a few of mine.</h2>
-        <p class="section-note" role="note">Case-study content in progress &mdash; visuals (redacted flows &amp; wireframes) to come.</p>
+        <p class="section-note">Case-study content in progress — redacted flows &amp; wireframes to come.</p>
       </div>
 
-      <!-- Flagship: LEDGER -->
-      <article class="case case--flagship">
-        <div class="case__media" aria-hidden="true">
-          <div class="diagonal diagonal--ledger">
-            <span class="diagonal__label">LEDGER</span>
-          </div>
+      <!-- Fig. 01 — Flagship: LEDGER -->
+      <article class="feature">
+        <div class="feature__media">
+          <div class="halftone" aria-hidden="true"><span class="halftone__label">LEDGER</span></div>
         </div>
-        <div class="case__body">
-          <p class="eyebrow">Flagship &middot; AI experience design</p>
-          <h3 class="case__title">Designing trust into an AI assistant for 250,000 people.</h3>
-          <p class="case__text">
+        <div class="feature__body">
+          <p class="prod-mark">Fig.&nbsp;01 &mdash; Flagship &middot; AI experience design</p>
+          <h3 class="feature__title">Designing trust into an AI assistant for 250,000 people.</h3>
+          <p class="feature__text">
             Sole UI/UX owner for a DHS policy chatbot. Usability testing with policy
             knowledge-workers proved that <em>source transparency</em> and
             <em>response precision</em> were non-negotiable &mdash; findings that
@@ -80,65 +74,48 @@
             doubled as the UAT test suite. I built consensus across a skeptical
             coalition of policy, legal, and executive stakeholders &mdash; and shipped.
           </p>
-          <ul class="metrics">
-            <li><span class="metrics__num">250K</span> users served</li>
-            <li><span class="metrics__num">1</span> sole UI/UX owner</li>
-            <li><span class="metrics__num">3</span> stakeholder camps aligned</li>
-          </ul>
-          <a class="case__link" href="#work" aria-disabled="true">Read the case study<span aria-hidden="true"> &rarr;</span></a>
+          <dl class="ledger">
+            <div><dt>Users served</dt><dd>250,000</dd></div>
+            <div><dt>UI/UX owner</dt><dd>Sole</dd></div>
+            <div><dt>Stakeholder camps aligned</dt><dd>3</dd></div>
+          </dl>
+          <p class="feature__foot"><a class="link-rule" href="#work">Read the case study</a></p>
         </div>
       </article>
 
-      <!-- Supporting three-up -->
-      <div class="case-grid">
-        <article class="case-card">
-          <div class="diagonal diagonal--treasury" aria-hidden="true"></div>
-          <p class="eyebrow">Design leadership</p>
-          <h3 class="case-card__title">A design consultancy, built inside the government.</h3>
-          <p class="case-card__text">
-            Turned Treasury&rsquo;s reactive print shop into an outcome-driven design
-            team &mdash; new service lines, the same 16 people, the same $2.2M budget.
-          </p>
-          <ul class="metrics metrics--inline">
-            <li><span class="metrics__num">+24%</span> satisfaction</li>
-            <li><span class="metrics__num">+40%</span> production</li>
-          </ul>
-        </article>
-
-        <article class="case-card">
-          <div class="diagonal diagonal--voc" aria-hidden="true"></div>
-          <p class="eyebrow">CX strategy</p>
-          <h3 class="case-card__title">A Voice-of-Customer program, from zero.</h3>
-          <p class="case-card__text">
-            Stood up CISA&rsquo;s VOC practice end to end &mdash; interviews, research,
-            telemetry &mdash; and turned it into CX strategy adopted agency-wide.
-          </p>
-          <ul class="metrics metrics--inline">
-            <li><span class="metrics__num">+33%</span> engagement</li>
-            <li><span class="metrics__num">+19%</span> CX scores</li>
-          </ul>
-        </article>
-
-        <article class="case-card">
-          <div class="diagonal diagonal--hr" aria-hidden="true"></div>
-          <p class="eyebrow">Product &amp; AI</p>
-          <h3 class="case-card__title">One place for 260,000 people&rsquo;s data.</h3>
-          <p class="case-card__text">
-            Led design on an agency-wide HR platform with an RBAC-gated chatbot,
-            collapsing scattered systems into a single queryable view.
-          </p>
-          <ul class="metrics metrics--inline">
-            <li><span class="metrics__num">260K</span> users</li>
-            <li><span class="metrics__num">~50K</span> hours/yr saved</li>
-          </ul>
-        </article>
-      </div>
+      <!-- Index of supporting work (editorial contents / ledger) -->
+      <ol class="index">
+        <li class="index__row">
+          <span class="index__folio">02</span>
+          <div class="index__main">
+            <h3 class="index__title">A design consultancy, built inside the government.</h3>
+            <p class="index__meta">Treasury CDS &middot; Design leadership &amp; org design</p>
+          </div>
+          <div class="index__metrics"><b>+24% / +40%</b><span>Satisfaction &middot; Production</span></div>
+        </li>
+        <li class="index__row">
+          <span class="index__folio">03</span>
+          <div class="index__main">
+            <h3 class="index__title">A Voice-of-Customer program, from zero.</h3>
+            <p class="index__meta">CISA &middot; CX strategy &amp; research</p>
+          </div>
+          <div class="index__metrics"><b>+33% / +19%</b><span>Engagement &middot; CX scores</span></div>
+        </li>
+        <li class="index__row">
+          <span class="index__folio">04</span>
+          <div class="index__main">
+            <h3 class="index__title">One place for 260,000 people&rsquo;s data.</h3>
+            <p class="index__meta">Agency HR platform &middot; Product &amp; AI</p>
+          </div>
+          <div class="index__metrics"><b>260K / ~50K</b><span>Users &middot; Hours saved/yr</span></div>
+        </li>
+      </ol>
     </section>
 
     <!-- LEADERSHIP / MANIFESTO ------------------------------------------ -->
     <section class="lead" id="lead" aria-labelledby="lead-h">
       <div class="lead__inner">
-        <p class="eyebrow eyebrow--onink">How I lead</p>
+        <p class="prod-mark prod-mark--onink">How I lead</p>
         <h2 id="lead-h" class="lead__statement">
           I care about you, and I want to hear your story. I ask a lot of questions,
           of a lot of people. I focus on people and process&mdash;<em>then</em> results.
@@ -153,36 +130,30 @@
     </section>
 
     <!-- SPECIALTIES ----------------------------------------------------- -->
-    <section class="skills" aria-labelledby="skills-h">
+    <section class="section" aria-labelledby="skills-h">
       <div class="skills__head">
         <h2 id="skills-h" class="section-title">What I&rsquo;m good at</h2>
-        <p class="skills__creds">
-          Forrester CX Master &middot; Prosci Change Practitioner &middot;
-          Partnership for Public Service Fellow &middot; 20+ years in and around DC.
-        </p>
+        <p class="skills__creds">Forrester CX Master &middot; Prosci Change Practitioner &middot; Partnership for Public Service Fellow &middot; 20+ years in and around DC.</p>
       </div>
       <ul class="skills__list">
-        <li>Solving (and creating) problems</li>
-        <li>AI experience &amp; agent design</li>
-        <li>CX evangelizing</li>
-        <li>Strategic planning</li>
-        <li>Coherence generation</li>
-        <li>Bureaucracy hacking</li>
-        <li>Rabble-rousing</li>
-        <li>Translating from CEO to Designese</li>
-        <li>Smushing things together</li>
+        <li data-fig="a">Solving (and creating) problems</li>
+        <li data-fig="b">AI experience &amp; agent design</li>
+        <li data-fig="c">CX evangelizing</li>
+        <li data-fig="d">Strategic planning</li>
+        <li data-fig="e">Coherence generation</li>
+        <li data-fig="f">Bureaucracy hacking</li>
+        <li data-fig="g">Rabble-rousing</li>
+        <li data-fig="h">Translating from CEO to Designese</li>
+        <li data-fig="i">Smushing things together</li>
       </ul>
     </section>
 
     <!-- CRAFT TEASER ---------------------------------------------------- -->
-    <section class="craft-teaser" aria-labelledby="craft-h">
+    <section class="section" aria-labelledby="craft-h">
       <div class="craft-teaser__inner">
         <h2 id="craft-h" class="craft-teaser__title">Before all this, I made complex things beautiful.</h2>
-        <p class="craft-teaser__text">
-          NASA books. K&ndash;12 textbooks. A Treasury strategic plan people actually
-          used. Twenty years of craft under the leadership.
-        </p>
-        <a class="btn btn--ghost" href="craft.html">See the craft<span aria-hidden="true"> &rarr;</span></a>
+        <p class="craft-teaser__text">NASA books. K&ndash;12 textbooks. A Treasury strategic plan people actually used. Twenty years of craft under the leadership.</p>
+        <a class="link-rule" href="craft.html">See the craft</a>
       </div>
     </section>
 
@@ -190,20 +161,21 @@
 
   <!-- FOOTER ------------------------------------------------------------ -->
   <footer class="site-footer" id="contact">
-    <p class="site-footer__tag">Everything is a design problem.</p>
-    <div class="site-footer__grid">
-      <a class="wordmark wordmark--footer" href="/" aria-label="C. M. Yates & Kompany — home">
-        <span class="wordmark__cmyk" aria-hidden="true">
-          <i class="c"></i><i class="m"></i><i class="y"></i><i class="k"></i>
-        </span>
-        <span class="wordmark__text">C.&#8202;M.&#8202;Yates&#8202;&amp;&#8202;Kompany</span>
-      </a>
-      <nav class="site-footer__contact" aria-label="Contact">
-        <a href="mailto:Chris@CMYKompany.com">Chris@CMYKompany.com</a>
-        <a href="https://www.linkedin.com/in/yatesc" rel="noopener">LinkedIn</a>
-      </nav>
+    <span class="regbar" aria-hidden="true"><i class="c"></i><i class="m"></i><i class="y"></i><i class="k"></i></span>
+    <div class="site-footer__inner">
+      <p class="site-footer__tag">Everything is a design problem.</p>
+      <div class="site-footer__grid">
+        <a class="wordmark wordmark--footer" href="/" aria-label="C. M. Yates & Kompany — home">
+          <span class="wordmark__cmyk" aria-hidden="true"><i class="c"></i><i class="m"></i><i class="y"></i><i class="k"></i></span>
+          <span class="wordmark__text">C.&#8202;M.&#8202;Yates&#8202;&amp;&#8202;Kompany</span>
+        </a>
+        <nav class="site-footer__contact" aria-label="Contact">
+          <a href="mailto:Chris@CMYKompany.com">Chris@CMYKompany.com</a>
+          <a href="https://www.linkedin.com/in/yatesc" rel="noopener">LinkedIn</a>
+        </nav>
+      </div>
+      <p class="site-footer__fine">&copy; 2026 Christopher Yates &middot; Washington, DC</p>
     </div>
-    <p class="site-footer__fine">&copy; 2026 Christopher Yates &middot; Washington, DC</p>
   </footer>
 
   <script src="assets/js/main.js" defer></script>

@@ -5,7 +5,7 @@
   // Reveal-on-scroll: opt sections in, then let IntersectionObserver show them.
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var targets = document.querySelectorAll(
-    ".case, .case-card, .section-head, .lead__inner, .skills__head, .skills__list, .craft-teaser__inner"
+    ".feature, .index__row, .section-head, .lead__inner, .skills__head, .skills__list, .craft-teaser__inner"
   );
 
   if (reduce || !("IntersectionObserver" in window)) {
