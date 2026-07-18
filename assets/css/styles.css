@@ -104,7 +104,7 @@ li { list-style: none; }
 .prod-mark, .section-note, .site-nav a, .ledger dt, .index__meta,
 .index__metrics span, .skills__creds, .story__caption, .colophon dt,
 .site-footer__fine {
-  font-family: var(--font-sans);
+  font-family: var(--font-display); /* Caslon small caps (was var(--font-sans)) */
   font-variant-caps: all-small-caps;
 }
 
@@ -115,6 +115,7 @@ li { list-style: none; }
   font-size: .86rem; font-weight: 600; letter-spacing: .06em;
   color: var(--fg-soft); margin: 0;
 }
+.prod-mark { font-weight: 500; } /* let Caslon render true regular small caps */
 .prod-mark::before {
   content: ""; width: 12px; height: 12px; flex: 0 0 auto;
   background:
