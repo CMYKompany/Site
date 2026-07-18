@@ -5,13 +5,13 @@
    cards. Structure is carried by rules, crop marks, figure numbers, tabular
    ledgers, and a CMYK registration bar — the vocabulary of a press sheet,
    grounded in the subject (a book/editorial designer whose brand is CMYK).
-   Type: ITC Caslon (display) + Lato (text), served via Adobe Fonts. Labels
+   Type: LTC Caslon Pro (display) + Lato (text), served via Adobe Fonts. Labels
    are set in SMALL CAPS — no monospace.
    ========================================================================== */
 
 /* ---- Tokens -------------------------------------------------------------- */
 :root {
-  --font-display: "itc-caslon-224", "Iowan Old Style", "Palatino Linotype",
+  --font-display: "ltc-caslon-pro", "Iowan Old Style", "Palatino Linotype",
     Palatino, Georgia, "Times New Roman", serif;
   --font-sans: "lato", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif;
