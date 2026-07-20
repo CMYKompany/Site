@@ -41,6 +41,7 @@ jobs:
           rsync -a \
             --exclude='.git' \
             --exclude='.github' \
+            --exclude='docs' \
             --exclude='_site' \
             ./ _site/
 
