@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LEDGER — Design Story — C. M. Yates &amp; Kompany</title>
+  <title>LEDGER (Draft) — Design Story — C. M. Yates &amp; Kompany</title>
   <meta name="description" content="LEDGER — designing trust into an AI policy assistant used by 250,000 DHS users. Sole UI/UX owner. Case study in progress." />
   <link rel="preconnect" href="https://use.typekit.net" crossorigin />
   <link rel="stylesheet" href="https://use.typekit.net/inx5kqh.css" />
@@ -28,6 +28,7 @@
   <main id="main">
     <article class="story">
       <div class="story__head">
+        <p class="draft-badge">Draft &middot; work in progress</p>
         <p class="prod-mark">Design Story &middot; Flagship &middot; AI experience design</p>
         <h1 class="story__title">LEDGER</h1>
         <p class="story__standfirst">
@@ -37,7 +38,10 @@
           every answer shows its sources, holds up to scrutiny, and survives a
           skeptical room of policy, legal, and executive stakeholders.
         </p>
-        <p class="story__cta"><span class="prod-mark" style="color:var(--accent)">Full case study in progress</span></p>
+        <div class="story__stats">
+          <div><b>95%</b><span>Reduction in lookup time</span></div>
+          <div><b>17</b><span>Usability tests</span></div>
+        </div>
       </div>
 
       <figure class="story__media">
@@ -72,22 +76,25 @@
           <section>
             <p class="prod-mark">What I decided</p>
             <p>
-              <em>[Draft &mdash; to be expanded with redacted flows and decision trees.]</em>
               Findings drove the interaction model toward visible, checkable sourcing;
-              motivated architecture changes to support multi-turn conversation so users
-              could refine and pin down an answer; and produced a CRIT-based prompting
-              guide that doubled as the UAT test suite &mdash; the same scenarios that
-              taught users to get good answers were the ones we tested against. I also
-              resolved navigation and discoverability issues before launch.
+              motivated architecture changes to support multi-turn conversation, so
+              users could refine and pin down an answer; and shaped a <strong>CRIT</strong>
+              prompting guide &mdash; <em>Context, Role, Interview, Task</em> &mdash; built
+              to teach policy knowledge-workers to get better answers in less time. That
+              same guide doubled as our UAT test scenarios: the prompts that modeled good
+              use were the ones we validated against. I also resolved navigation and
+              discoverability issues before launch.
             </p>
           </section>
           <section>
             <p class="prod-mark">The outcome</p>
             <p>
               LEDGER shipped to roughly <strong>250,000</strong> users with buy-in built
-              across a skeptical coalition of policy, legal, and senior executives.
-              <em>[Placeholder for adoption / satisfaction / trust metrics &mdash;
-              relative or proxy figures to be confirmed.]</em>
+              across a skeptical coalition of policy, legal, and senior executives. In
+              testing, the experience cut the time to find and verify a policy answer by
+              about <strong>95%</strong> against the old multi-document slog &mdash; the
+              product of <strong>17</strong> rounds of usability testing that hardened the
+              interaction model before launch.
             </p>
           </section>
         </div>

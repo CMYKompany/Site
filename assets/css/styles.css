@@ -300,6 +300,22 @@ li { list-style: none; }
 .story__standfirst { font-family: var(--font-display); font-weight: 400; font-size: var(--fs-24); line-height: 1.44; }
 .story__standfirst + .story__cta { margin-top: 1.5rem; }
 
+/* Draft / proof marker — a press "DRAFT" stamp, in magenta process ink. */
+.draft-badge {
+  display: inline-flex; align-items: center; gap: .5em;
+  font-family: var(--font-sans); font-variant-caps: all-small-caps;
+  font-size: var(--fs-14); font-weight: 700; letter-spacing: .1em;
+  color: var(--cmyk-m); border: 1.5px solid var(--cmyk-m);
+  padding: .2em .7em; margin: 0 0 1.5rem;
+}
+.draft-badge::before { content: ""; width: 10px; height: 10px; flex: 0 0 auto; background: var(--cmyk-m); }
+
+/* Flagship quick-hit stats — big Caslon numerals over ruled, small-caps labels. */
+.story__stats { display: flex; flex-wrap: wrap; gap: clamp(1.5rem, 6vw, 4rem); margin-top: 2.2rem; }
+.story__stats div { min-width: 7rem; display: grid; gap: .15rem; border-top: 1.5px solid var(--line); padding-top: .6rem; }
+.story__stats b { font-family: var(--font-display); font-weight: 400; font-size: var(--fs-48); line-height: 1; letter-spacing: -.01em; font-variant-numeric: tabular-nums; }
+.story__stats span { font-family: var(--font-display); font-variant-caps: all-small-caps; font-size: var(--fs-18); letter-spacing: .04em; color: var(--fg-soft); }
+
 .story__media { position: relative; margin: clamp(2rem, 5vw, 3.5rem) 0 clamp(.8rem, 2vw, 1.2rem); aspect-ratio: 21 / 9; }
 .story__caption { font-size: var(--fs-18); letter-spacing: .03em; color: var(--fg-soft); }
 
