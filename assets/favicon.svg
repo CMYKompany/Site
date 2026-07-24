@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="CMYKompany">
-  <title>CMYKompany</title>
-  <!-- Placeholder mark echoing the CMYKompany speech-bubbles; swap for the final logo. -->
-  <circle cx="19.5" cy="13" r="8.5" fill="#f5c518"/>
-  <circle cx="15.5" cy="12" r="8.5" fill="#e6247e"/>
-  <circle cx="11.5" cy="11" r="8.5" fill="#12b0d6"/>
-  <path d="M5.5 15 L4 24 L12 18 Z" fill="#12b0d6"/>
-</svg>
