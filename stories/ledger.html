@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LEDGER (Draft) — Design Story — C. M. Yates &amp; Kompany</title>
-  <meta name="description" content="LEDGER — designing trust into an AI policy assistant used by 250,000 DHS users. Sole UI/UX owner. Case study in progress." />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <meta name="description" content="LEDGER — designing trust into an AI policy assistant used by 250,000 people. Sole UI/UX owner. Case study in progress." />
   <link rel="preconnect" href="https://use.typekit.net" crossorigin />
   <link rel="stylesheet" href="https://use.typekit.net/inx5kqh.css" />
   <link rel="stylesheet" href="../assets/css/styles.css" />
@@ -47,14 +48,14 @@
       <figure class="story__media">
         <div class="halftone crop" aria-hidden="true"><span class="halftone__label">LEDGER</span></div>
       </figure>
-      <figcaption class="story__caption">Placeholder plate — redacted flows &amp; wireframes to be added</figcaption>
+      <figcaption class="story__caption">Placeholder plate — the interface shipped in build under the codename PRISM; redacted screens to come</figcaption>
 
       <div class="story__body">
         <div class="story__main">
           <section>
-            <p class="prod-mark">The brief</p>
+            <h2 class="prod-mark">The brief</h2>
             <p>
-              A U.S. Department of Homeland Security team set out to put an AI assistant
+              A U.S. government client set out to put an AI assistant
               in front of hundreds of thousands of employees to help them navigate dense,
               high-stakes policy. The technology worked. The question was whether people
               would <em>trust</em> it enough to use it &mdash; and whether the experience
@@ -63,7 +64,7 @@
             </p>
           </section>
           <section>
-            <p class="prod-mark">The problem, reframed</p>
+            <h2 class="prod-mark">The problem, reframed</h2>
             <p>
               Usability testing with policy knowledge-workers surfaced the real
               requirement early: <em>source transparency</em> and <em>response
@@ -74,7 +75,7 @@
             </p>
           </section>
           <section>
-            <p class="prod-mark">What I decided</p>
+            <h2 class="prod-mark">What I decided</h2>
             <p>
               Findings drove the interaction model toward visible, checkable sourcing;
               motivated architecture changes to support multi-turn conversation, so
@@ -87,7 +88,7 @@
             </p>
           </section>
           <section>
-            <p class="prod-mark">The outcome</p>
+            <h2 class="prod-mark">The outcome</h2>
             <p>
               LEDGER shipped to roughly <strong>250,000</strong> users with buy-in built
               across a skeptical coalition of policy, legal, and senior executives. In
@@ -103,17 +104,78 @@
           <p class="prod-mark">Colophon</p>
           <dl>
             <dt>Client</dt>
-            <dd>U.S. Department of Homeland Security (via ECS)</dd>
+            <dd>Government client (via ECS)</dd>
             <dt>My role</dt>
             <dd>Lead designer &middot; sole UI/UX owner<br />Usability research<br />Interaction &amp; conversation design<br />Stakeholder alignment</dd>
             <dt>Platforms</dt>
             <dd>Conversational AI &middot; Web</dd>
+            <dt>Codename</dt>
+            <dd>PRISM (in development)</dd>
             <dt>Status</dt>
             <dd>Draft &mdash; case study in progress</dd>
           </dl>
         </aside>
       </div>
     </article>
+
+
+    <section class="section" aria-labelledby="crit-h">
+      <div class="section-head">
+        <p class="prod-mark">User education &middot; The prompting guide</p>
+        <h2 id="crit-h" class="section-title">Teaching people to trust it.</h2>
+        <p class="section-note">A guide I authored to help knowledge-workers get better answers in less time. It never shipped to end users, but it captures the approach &mdash; and doubled as our UAT test scenarios.</p>
+      </div>
+      <div class="crit__layout">
+        <div class="crit__main">
+          <div class="crit__grid">
+            <div class="crit__item">
+              <h3><b>C</b>ontext</h3>
+              <p>Set the stage &mdash; the situation, why it matters, and who&rsquo;s involved.</p>
+              <p class="crit__eg">&ldquo;I work in an oversight office at a federal agency&hellip;&rdquo;</p>
+            </div>
+            <div class="crit__item">
+              <h3><b>R</b>ole</h3>
+              <p>Say who you need the assistant to write as, or for.</p>
+              <p class="crit__eg">&ldquo;Act as a policy reviewer&hellip;&rdquo;</p>
+            </div>
+            <div class="crit__item">
+              <h3><b>I</b>nterview</h3>
+              <p>Ask it to surface risks, weigh trade-offs, or walk through its reasoning.</p>
+              <p class="crit__eg">&ldquo;What risks should I consider?&rdquo;</p>
+            </div>
+            <div class="crit__item">
+              <h3><b>T</b>ask</h3>
+              <p>Be specific about what you want it to produce.</p>
+              <p class="crit__eg">&ldquo;Provide a comparison of&hellip;&rdquo;</p>
+            </div>
+          </div>
+          <div class="crit__compare">
+            <div class="crit__before">
+              <p class="prod-mark">Instead of this</p>
+              <q>telework policy</q>
+              <q>privacy requirements</q>
+            </div>
+            <div class="crit__after">
+              <p class="prod-mark">Try this</p>
+              <q>I supervise a team at agency headquarters, and an employee has requested a remote-work accommodation. Walk me through how the current telework policy applies, and my options.</q>
+            </div>
+          </div>
+          <p class="crit__credit">The CRIT framework is adapted from <em>The AI-Driven Leader</em> by Geoff Woods.</p>
+        </div>
+        <aside class="crit__aside" aria-label="Example requests">
+          <p class="prod-mark">Try asking about&hellip;</p>
+          <ul>
+            <li>Finding policies</li>
+            <li>What&rsquo;s new</li>
+            <li>Following a policy&rsquo;s instructions</li>
+            <li>Checking compliance</li>
+            <li>Comparing policies</li>
+            <li>Drafting and editing</li>
+            <li>Aligning with new requirements</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
 
     <nav class="story-pager" aria-label="More work">
       <a class="prev" href="../index.html#work">&larr; All work</a>

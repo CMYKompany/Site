@@ -40,7 +40,7 @@ Served via GitHub Pages from this repository. Once ready, the custom domain
 
 🚧 **In active development.** The current `index.html` is a temporary holding
 page. The full portfolio is being built as a set of leadership case studies —
-led by **LEDGER** (DHS AI policy chatbot, 250K users) — per the positioning
+led by **LEDGER** (government AI policy chatbot, 250K users) — per the positioning
 strategy in the project brief.
 
 ## Roadmap
