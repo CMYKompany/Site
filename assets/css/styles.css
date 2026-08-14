@@ -114,7 +114,14 @@ li { list-style: none; }
 
 .skip-link { position: absolute; left: .5rem; top: -3rem; background: var(--fg); color: var(--bg); padding: .5rem .9rem; z-index: 100; transition: top .15s ease; }
 .skip-link:focus { top: .5rem; }
-:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+/* Two-tone focus ring: a dark outline (visible on light/blue fields, and the
+   token the OS overrides in forced-colors mode) plus a light halo (visible on
+   the dark header/footer and in dark theme). One of the two always meets 3:1. */
+:focus-visible {
+  outline: 2px solid #0b0d13;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 5px rgba(240, 243, 250, 0.92);
+}
 
 /* Small-caps label helper — Caslon small caps, no monospace. */
 .prod-mark, .section-note, .site-nav a, .ledger dt, .index__folio, .index__meta,
