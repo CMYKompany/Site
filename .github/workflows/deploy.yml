@@ -7,7 +7,7 @@ name: Deploy site to GitHub Pages
 
 on:
   push:
-    branches: ["claude/portfolio-website-setup-9i3bkx"]
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
