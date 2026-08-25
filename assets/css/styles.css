@@ -274,15 +274,35 @@ li { list-style: none; }
 .index__metrics { display: flex; flex-direction: column; gap: .35rem; text-align: right; font-variant-numeric: tabular-nums; }
 .index__metrics b { font-family: var(--font-display); font-weight: 400; font-size: var(--fs-24); }
 .index__metrics span { font-size: var(--fs-14); letter-spacing: .03em; color: var(--fg-soft); }
+/* Non-clickable rows for studies still being written (no hover shift, muted). */
+.index__row--soon { transition: none; }
+.index__row--soon:hover { padding-left: 0; }
+.index__row--soon .index__title { color: var(--fg-soft); }
+.index__soon { font-family: var(--font-sans); font-variant-caps: all-small-caps; font-size: var(--fs-14); letter-spacing: .04em; color: var(--accent-ink); }
+
+/* ---- More work — short strip (two lines each, no dedicated pages) --------- */
+.morework { margin-top: clamp(2.5rem, 5vw, 4rem); border-top: 1.5px solid var(--line); padding-top: 1.6rem; }
+.morework__list { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1.4rem, 3vw, 2.6rem); margin-top: 1.3rem; }
+.morework__list li { display: flex; flex-direction: column; gap: .5rem; }
+.morework__list b { font-family: var(--font-display); font-weight: 400; font-size: var(--fs-24); }
+.morework__list span { font-size: var(--fs-14); letter-spacing: .02em; color: var(--fg-soft); line-height: 1.55; }
 
 /* ---- Leadership / manifesto ---------------------------------------------- */
 .lead { background: var(--ink); color: #f4f6fb; }
 .lead__inner { max-width: 56rem; margin: 0 auto; padding: clamp(4rem, 9vw, 7.5rem) var(--pad); }
-.lead__statement { font-family: var(--font-display); font-weight: 400; font-size: var(--fs-36); line-height: 1.26; margin-top: 1.4rem; }
+.lead__statement { font-family: var(--font-display); font-weight: 400; font-size: var(--fs-36); line-height: 1.26; margin-top: 1.4rem; text-wrap: pretty; }
 .lead__statement em { color: inherit; }
+/* Each sentence begins its own line; wraps gracefully only when it must. */
+.lead__line { display: block; }
 .lead__aside { display: block; margin-top: .8rem; font-size: var(--fs-18); color: rgba(244,246,251,.6); font-style: italic; }
 .lead__scale { margin-top: 2.2rem; font-size: var(--fs-18); color: rgba(244,246,251,.8); max-width: 42rem; }
 .lead__scale strong { color: #fff; }
+.lead__receipts { margin-top: 2rem; max-width: 46rem; border-top: 1px solid rgba(244,246,251,.22); }
+.lead__receipts li { padding: 1.05rem 0; border-bottom: 1px solid rgba(244,246,251,.12); font-size: var(--fs-18); color: rgba(244,246,251,.8); line-height: 1.5; }
+.lead__receipts b { color: #fff; font-weight: 600; }
+.lead__more { margin-top: 1.8rem; }
+.lead .link-rule { color: #f4f6fb; background-image: linear-gradient(var(--blue-bright), var(--blue-bright)); }
+.lead .link-rule:hover { color: var(--ink); }
 
 /* ---- Skills (ruled editorial list) --------------------------------------- */
 .skills__head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 1rem; margin-bottom: 2.2rem; }
@@ -411,8 +431,10 @@ li { list-style: none; }
   .index__metrics { grid-column: 2; flex-direction: row; gap: 1.2rem; text-align: left; margin-top: .2rem; }
   .index__metrics span { align-self: center; }
   .skills__list { grid-template-columns: 1fr 1fr; }
+  .morework__list { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 560px) {
+  .morework__list { grid-template-columns: 1fr; }
   .hero__headline { font-size: var(--fs-48); }
   .story__title { font-size: var(--fs-36); }
   .section-title { font-size: var(--fs-30); }

@@ -19,9 +19,8 @@ Site/
 ├── craft.html                    # Craft & range — design-story index + print work
 ├── stories/                      # Case studies & design stories
 │   ├── ledger.html               #   LEDGER — flagship AI experience case study
-│   ├── treasury-cds.html         #   Treasury CDS — design leadership / org design
-│   ├── cisa-voc.html             #   CISA Voice-of-Customer
-│   ├── single-pane.html          #   Enterprise "single pane of glass"
+│   ├── treasury-cds.html         #   Treasury CDS — org design & leadership
+│   ├── cisa-voc.html             #   CISA Voice-of-Customer — research infrastructure
 │   ├── agency-strategic-plan.html
 │   ├── guide-to-the-iss.html
 │   └── mentor-in-a-box.html
@@ -64,11 +63,12 @@ and the core leadership case studies are in place; remaining work is content
 passes, real visuals, and the About page.
 
 - [x] Visual direction & design system
-- [x] Homepage: hero, positioning, work index
-- [x] Leadership case studies: LEDGER, Treasury CDS, CISA VOC, single-pane
+- [x] Homepage: hero, positioning, work index, leadership
+- [x] Case studies: LEDGER, Treasury CDS, CISA VOC
 - [x] Craft & range (NASA / Treasury / K–12 + design stories)
 - [x] Accessibility pass (Section 508 / WCAG 2.1 AA)
 - [x] Custom domain live (cmykompany.com) + HTTPS
-- [ ] Content passes on each case study (with real screenshots)
+- [ ] New case studies: Design system, AIGINT
+- [ ] Content passes on each case study (with real visuals)
 - [ ] About / leadership manifesto page
 - [ ] Contact
