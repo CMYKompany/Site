@@ -35,14 +35,15 @@
         <h1 class="story__title">LEDGER</h1>
         <p class="story__standfirst">
           Designing trust into an AI policy assistant available to <strong>250,000</strong>
-          people. As sole owner of the UI and UX, I turned a promising language model
-          into something policy knowledge-workers could actually rely on &mdash; where
-          every answer shows its sources, holds up to scrutiny, and survives a
-          skeptical room of policy, legal, and executive stakeholders.
+          people across a federal department. As sole owner of the UI and UX, I turned a
+          capable language model into something policy knowledge-workers could actually
+          rely on &mdash; where every answer shows its sources, holds up to scrutiny, and
+          survives a skeptical room of policy, legal, and executive stakeholders.
         </p>
         <div class="story__stats">
-          <div><b>~20&times;</b><span>Faster to find &amp; verify an answer</span></div>
+          <div><b>~20&times;</b><span>Faster to find &amp; verify a policy answer</span></div>
           <div><b>17</b><span>Research participants</span></div>
+          <div><b>1</b><span>Designer</span></div>
         </div>
       </div>
 
@@ -66,40 +67,40 @@
             </p>
           </section>
           <section>
-            <h2 class="prod-mark">The problem, reframed</h2>
+            <h2 class="prod-mark">What testing broke</h2>
             <p>
-              Usability testing with policy knowledge-workers surfaced the real
-              requirement early: <em>source transparency</em> and <em>response
-              precision</em> were non-negotiable. An answer without a traceable source
-              wasn&rsquo;t just less useful &mdash; it was unusable. That single finding
-              reframed the work from &ldquo;design a chat UI&rdquo; to &ldquo;design a
-              system people can verify.&rdquo;
+              The plan was to let people tell the system what to look at: panels for
+              including documents, setting scope, shaping the environment. It&rsquo;s the
+              obvious design. It&rsquo;s also the one nobody used. Twelve of twelve
+              participants never opened the panels. When we pointed them out directly, two
+              understood what they were for.
+            </p>
+            <p>
+              So we stopped asking people to configure the assistant and taught it to
+              infer what they were after. That moves work out of the interface and into the
+              system &mdash; which only works if the system shows what it decided and why.
+              Transparency stopped being a feature and became the load-bearing requirement.
+            </p>
+            <p>
+              The same testing established that source transparency and response precision
+              weren&rsquo;t preferences. An answer without a traceable source wasn&rsquo;t
+              less useful to a policy knowledge-worker; it was unusable. That reframed the
+              work from &ldquo;design a chat UI&rdquo; to &ldquo;design a system people can
+              verify.&rdquo;
             </p>
           </section>
           <section>
-            <h2 class="prod-mark">What I decided</h2>
+            <h2 class="prod-mark">What changed</h2>
             <p>
-              Findings drove the interaction model toward visible, checkable sourcing;
-              motivated architecture changes to support multi-turn conversation, so
-              users could refine and pin down an answer; and shaped a <strong>CRIT</strong>
-              prompting guide &mdash; <em>Context, Role, Interview, Task</em> &mdash; built
-              to teach policy knowledge-workers to get better answers in less time. That
-              same guide doubled as our UAT test scenarios: the prompts that modeled good
-              use were the ones we validated against. I also resolved navigation and
-              discoverability issues before launch.
+              Findings drove the interaction model toward visible, checkable sourcing, and
+              motivated architecture changes to support multi-turn conversation so users
+              could refine an answer rather than re-ask for it.
             </p>
-          </section>
-          <section>
-            <h2 class="prod-mark">The outcome</h2>
             <p>
-              LEDGER shipped &mdash; available to roughly <strong>250,000</strong> people
-              &mdash; with buy-in built across a skeptical coalition of policy, legal, and
-              senior executives. In a moderated benchmark against the incumbent SharePoint
-              policy repository, finding and verifying a policy answer went about
-              <strong>20&times;</strong> faster &mdash; even with the test stacked against us,
-              since participants searched for policies they already knew. That result came
-              out of research with <strong>17</strong> participants that hardened the
-              interaction model before launch.
+              We benchmarked against the SharePoint repository people were already using,
+              and stacked the test against ourselves &mdash; participants looked for
+              policies they already knew, on ground they were familiar with. Finding and
+              verifying an answer still went about <strong>20&times;</strong> faster.
             </p>
           </section>
         </div>
