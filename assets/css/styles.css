@@ -403,6 +403,8 @@ li { list-style: none; }
 .logos { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 300px)); gap: clamp(1.2rem, 3vw, 2rem); margin-top: clamp(1.6rem, 3vw, 2.2rem); }
 .logos figure { margin: 0; }
 .logos img { display: block; width: 100%; height: auto; background: #fff; border: 1px solid var(--line-soft); padding: clamp(1rem, 2.5vw, 1.6rem); }
+/* Marks designed on a dark ground sit on a dark card instead. */
+.logos .logo--dark img { background: #0b0d13; border-color: rgba(255, 255, 255, .16); }
 .logos figcaption { margin-top: .55rem; font-family: var(--font-sans); font-variant-caps: all-small-caps; font-size: var(--fs-14); letter-spacing: .03em; color: var(--fg-soft); }
 /* Multiple call-to-action links on one line. */
 .story__cta--multi { display: flex; flex-wrap: wrap; gap: .8rem 2rem; }
