@@ -398,6 +398,10 @@ li { list-style: none; }
 .story__gallery figure { margin: 0; }
 .story__gallery img { display: block; width: 100%; height: auto; background: var(--bg-2); border: 1px solid var(--line-soft); }
 .story__gallery figcaption { margin-top: .55rem; font-family: var(--font-sans); font-variant-caps: all-small-caps; font-size: var(--fs-14); letter-spacing: .03em; color: var(--fg-soft); line-height: 1.4; }
+.story__gallery figure a { display: block; line-height: 0; }
+.story__gallery figcaption a { line-height: 1.4; }
+/* Light matting — for marks/covers that need a white ground in either theme. */
+.story__gallery--light img { background: #fff; padding: clamp(.8rem, 2vw, 1.4rem); }
 /* Cover wall — a grid of book covers, shown as physical objects. */
 .covers { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: clamp(1.1rem, 2.5vw, 1.9rem); margin-top: clamp(1.6rem, 3vw, 2.2rem); }
 .covers figure { margin: 0; }
