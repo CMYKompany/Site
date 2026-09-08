@@ -404,6 +404,8 @@ li { list-style: none; }
 .story__gallery--light img { background: #fff; padding: clamp(.8rem, 2vw, 1.4rem); }
 /* Wrapping gallery — flows to fit any number of items. */
 .story__extra .story__gallery--wrap { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); align-items: start; }
+/* UI-screenshot gallery — larger cells so interfaces stay readable. */
+.story__extra .story__gallery--ui { grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); align-items: start; }
 /* Cover wall — a grid of book covers, shown as physical objects. */
 .covers { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: clamp(1.1rem, 2.5vw, 1.9rem); margin-top: clamp(1.6rem, 3vw, 2.2rem); }
 .covers figure { margin: 0; }
