@@ -310,9 +310,9 @@ li { list-style: none; }
 /* ---- Skills (ruled editorial list) --------------------------------------- */
 .skills__head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 1rem; margin-bottom: 2.2rem; }
 .skills__creds { font-size: var(--fs-18); letter-spacing: .02em; color: var(--fg-soft); max-width: 26rem; line-height: 1.7; }
-.skills__list { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1.5px solid var(--line); }
-.skills__list li { font-family: var(--font-display); font-size: var(--fs-24); padding: 1.05rem .2rem; border-bottom: 1px solid var(--line-soft); }
-.skills__list li::before { content: attr(data-fig); font-family: var(--font-sans); font-variant-caps: all-small-caps; font-size: var(--fs-12); color: var(--accent-ink); vertical-align: super; margin-right: .5em; letter-spacing: .04em; }
+.skills__list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1.5px solid var(--line); }
+.skills__list li { font-family: var(--font-display); font-size: var(--fs-18); padding: 1.05rem .2rem; border-bottom: 1px solid var(--line-soft); white-space: nowrap; }
+.skills__list li::before { content: "\2022"; color: var(--accent-ink); margin-right: .5em; }
 
 /* ---- Craft teaser -------------------------------------------------------- */
 .craft-teaser__inner { border-top: 1.5px solid var(--line); padding-top: clamp(2.5rem, 5vw, 4rem); }
@@ -402,6 +402,8 @@ li { list-style: none; }
 .story__gallery figcaption a { line-height: 1.4; }
 /* Light matting — for marks/covers that need a white ground in either theme. */
 .story__gallery--light img { background: #fff; padding: clamp(.8rem, 2vw, 1.4rem); }
+/* Wrapping gallery — flows to fit any number of items. */
+.story__extra .story__gallery--wrap { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); align-items: start; }
 /* Cover wall — a grid of book covers, shown as physical objects. */
 .covers { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: clamp(1.1rem, 2.5vw, 1.9rem); margin-top: clamp(1.6rem, 3vw, 2.2rem); }
 .covers figure { margin: 0; }
@@ -477,5 +479,6 @@ li { list-style: none; }
   .site-nav { gap: .9rem; }
   .site-nav a:not(.site-nav__cta) { display: none; }
   .skills__list { grid-template-columns: 1fr; }
+  .skills__list li { white-space: normal; }
   .story__gallery { grid-template-columns: 1fr; }
 }
