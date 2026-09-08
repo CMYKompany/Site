@@ -148,6 +148,8 @@ li { list-style: none; }
 }
 .prod-mark--onblue { color: #fff; }
 .prod-mark--onink  { color: var(--blue-bright); }
+/* No CMYK swatch on the hero eyebrow. */
+.hero .prod-mark::before { display: none; }
 
 /* ---- CMYK registration bar (divider) ------------------------------------- */
 .regbar { display: grid; grid-template-columns: repeat(4, 1fr); height: 6px; width: 100%; }
@@ -186,6 +188,7 @@ li { list-style: none; }
 .wordmark__cmyk .m { background: var(--cmyk-m); }
 .wordmark__cmyk .y { background: var(--cmyk-y); }
 .wordmark__cmyk .k { background: var(--cmyk-k); }
+.wordmark__mark { width: 20px; height: 20px; display: block; border-radius: 3px; flex: 0 0 auto; }
 
 /* ---- Header -------------------------------------------------------------- */
 .site-header {
@@ -319,7 +322,7 @@ li { list-style: none; }
 /* ---- Footer -------------------------------------------------------------- */
 .site-footer { background: var(--ink); color: #f4f6fb; }
 .site-footer__inner { padding: clamp(3.5rem, 7vw, 6rem) var(--pad) 3rem; }
-.site-footer__tag { font-family: var(--font-display); font-style: italic; font-weight: 400; font-size: var(--fs-36); color: #fff; max-width: 20rem; margin-bottom: 3rem; }
+.site-footer__tag { font-family: var(--font-display); font-style: italic; font-weight: 400; font-size: var(--fs-36); color: #fff; max-width: none; margin-bottom: 3rem; }
 .site-footer__grid { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.5rem; padding-bottom: 1.6rem; border-bottom: 1px solid rgba(255,255,255,.14); }
 .wordmark--footer .wordmark__text { color: #f4f6fb; }
 .site-footer__contact { display: flex; flex-wrap: wrap; gap: 1.5rem; font-family: var(--font-sans); font-size: var(--fs-18); }
@@ -387,6 +390,7 @@ li { list-style: none; }
 /* Artifact media — present a print piece whole, matted, like a product shot. */
 .story__media--art { aspect-ratio: auto; background: var(--bg-2); border: 1px solid var(--line-soft); display: flex; align-items: center; justify-content: center; padding: clamp(1.6rem, 4vw, 3.2rem); }
 .story__art { display: block; width: auto; height: auto; max-width: 100%; max-height: 62vh; object-fit: contain; box-shadow: 0 12px 34px rgba(11, 13, 19, .32); }
+.story__media--art a { display: inline-block; max-width: 100%; line-height: 0; }
 /* Supporting artifacts — a small ruled gallery. */
 .story__extra { margin-top: clamp(2.5rem, 5vw, 4rem); border-top: 1.5px solid var(--line); padding-top: clamp(1.4rem, 3vw, 2rem); }
 .story__extra > .prod-mark { color: var(--accent-ink); }
@@ -422,7 +426,7 @@ li { list-style: none; }
 .colophon dt { font-size: var(--fs-18); letter-spacing: .04em; color: var(--accent-ink); padding-top: 1rem; }
 .colophon dd { font-size: var(--fs-18); line-height: 1.55; padding: .35rem 0 .9rem; border-bottom: 1px solid var(--line-soft); }
 
-.story-pager { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; max-width: var(--maxw); margin: 0 auto; padding: 1.4rem var(--pad) 0; border-top: 1.5px solid var(--line); letter-spacing: .03em; font-size: var(--fs-18); }
+.story-pager { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; max-width: var(--maxw); margin: 0 auto; padding: 1.4rem var(--pad) clamp(2.5rem, 5vw, 4rem); border-top: 1.5px solid var(--line); letter-spacing: .03em; font-size: var(--fs-18); }
 .story-pager a { color: var(--fg-soft); transition: color .15s ease; }
 .story-pager a:hover { color: var(--fg); }
 .story-pager .next { text-align: right; }
