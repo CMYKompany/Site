@@ -311,7 +311,7 @@ li { list-style: none; }
 .skills__head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 1rem; margin-bottom: 2.2rem; }
 .skills__creds { font-size: var(--fs-18); letter-spacing: .02em; color: var(--fg-soft); max-width: 26rem; line-height: 1.7; }
 .skills__list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1.5px solid var(--line); }
-.skills__list li { font-family: var(--font-display); font-size: var(--fs-18); padding: 1.05rem .2rem; border-bottom: 1px solid var(--line-soft); white-space: nowrap; }
+.skills__list li { font-family: var(--font-display); font-size: var(--fs-24); padding: 1.05rem .2rem; border-bottom: 1px solid var(--line-soft); white-space: nowrap; }
 .skills__list li::before { content: "\2022"; color: var(--accent-ink); margin-right: .5em; }
 
 /* ---- Craft teaser -------------------------------------------------------- */
